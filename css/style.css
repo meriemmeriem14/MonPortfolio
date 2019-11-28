@@ -1,0 +1,268 @@
+                /*Generale Style*/
+                
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    font-family: 'Lucida Sans';
+                }
+                
+                .sections {
+                    text-align: center;
+                }
+                
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                /*Nav-bar*/
+                
+                .carousel {
+                    background: #eee;
+                }
+                
+                .carousel-cell {
+                    height: 95vh;
+                    background: no-repeat center center scroll;
+                    background-size: cover;
+                    counter-increment: carousel-cell;
+                    display: block;
+                }
+                
+                .carousel-cell img {
+                    filter: brightness(0.4);
+                    width: 1700px;
+                    height: 1300px;
+                }
+                
+                .carousel-caption {
+                    bottom: 220px;
+                    text-shadow: 0 2px 3px black;
+                }
+                
+                .carousel-caption h5 {
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: '-apple-system'
+                }
+                
+                .carousel-caption p {
+                    width: 450PX;
+                    margin: auto;
+                    font-size: 25px;
+                    line-height: 1.9;
+                }
+                
+                .navbar {
+                    position: absolute;
+                }
+                
+                .navbar-nav a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-decoration-style: wavy;
+                    font-weight: bold;
+                    font-size: 25px;
+                    margin-top: 10px;
+                }
+                
+                .navbar-light .navbar-nav .nav-link:hover {
+                    color: #b191b1!important;
+                }
+                
+                .navbar-brand {
+                    font-size: 28px;
+                    font-family: 'Lucida Sans';
+                }
+                
+                .navbar-light .navbar-nav .nav-link {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-decoration-style: wavy;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: white;
+                    margin-top: 10px;
+                    margin-left: 40px;
+                    color: white;
+                }
+                
+                .container6 {
+                    padding: 0 100px;
+                }
+                /*About*/
+                
+                .about {
+                    margin-bottom: 10px;
+                    background-color: rgb(254, 251, 255);
+                    padding: 50px;
+                }
+                
+                .section-title {
+                    font-size: 30px;
+                    padding: 10PX;
+                    color: rgb(109, 105, 105);
+                }
+                
+                .paragraphe {
+                    font-style: oblique;
+                    font-size: large;
+                }
+                
+                #monimage {
+                    float: right;
+                }
+                
+                .rounded-circle {
+                    width: 250px;
+                    height: 270px;
+                    border-radius: 20%;
+                }
+                
+                #button {
+                    background-color: rgb(230, 187, 219);
+                    color: rgb(47, 44, 47);
+                    border: white;
+                    font-family: 'Cambria';
+                    font-style: italic;
+                    margin-top: 3%;
+                    border-radius: 26%;
+                }
+                /*competences*/
+                
+                .skills {
+                    height: 400px;
+                }
+                
+                .card {
+                    border: none;
+                }
+                
+                .progress {
+                    height: 10px;
+                }
+                
+                .progress .progress-bar {
+                    width: 0;
+                    transition: all ease 0.5s;
+                    height: 10px;
+                }
+                /*study*/
+                
+                .study {
+                    margin-top: 40px;
+                    margin-top: 60PX;
+                }
+                
+                #study-title {
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+                /*SECTION INTERETS*/
+                
+                .interet {
+                    flex: 0 1 50%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                    padding: 20px;
+                }
+                
+                .interet img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 15px #555;
+                }
+                /*SECTION Contact*/
+                
+                .contact-section {
+                    position: relative;
+                }
+                
+                .contact-section .contact-warp {
+                    position: relative;
+                    z-index: 2;
+                }
+                
+                .align {
+                    text-align: left;
+                    margin-left: 10%;
+                }
+                
+                @media screen and (min-width: 780px) and (max-width: 1024px) {
+                    .carousel-caption {
+                        margin-bottom: 20%;
+                        font-size: 50px;
+                    }
+                    .marge {
+                        margin-top: 20px;
+                    }
+                    .navbar-nav li {
+                        text-align: center;
+                    }
+                    .nav-link {
+                        font-size: 25px;
+                    }
+                    #about .titre-about {
+                        padding: 0;
+                        font-size: medium;
+                        display: inline;
+                    }
+                    .container6 .paragraphe {
+                        margin-right: 300px;
+                        width: max-content;
+                    }
+                    .align li {
+                        font-size: medium;
+                    }
+                    .nav-link {
+                        font-size: 23px;
+                    }
+                }
+                
+                @media all and (max-device-width: 480px) {
+                    .navbar-toggler {
+                        display: none;
+                    }
+                    .navbar-brand {
+                        font-size: 26px;
+                    }
+                    .carousel-caption {
+                        margin-top: 100px;
+                        margin-bottom: 0px;
+                    }
+                    .carousel-caption #base {
+                        font-size: 28px;
+                    }
+                    .carousel-caption h5 {
+                        font-size: 35px;
+                    }
+                    .carousel-caption p {
+                        font-size: 13px;
+                        width: 200px;
+                    }
+                    #about .section-title {
+                        text-align: center;
+                    }
+                    .my-5 {
+                        margin-left: 65px;
+                    }
+                    .rounded-circle {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
