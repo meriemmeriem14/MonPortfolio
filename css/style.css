@@ -5,7 +5,13 @@
 }
 
 body {
-    font-family: 'Lucida Sans';
+    background-image: url(../img/bg-body.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .sections {
@@ -24,6 +30,43 @@ body {
 * {
     margin: 0;
     padding: 0;
+}
+
+
+/**Global classes**/
+
+.section-title {
+    position: relative;
+    margin: 0px 0px 55px 0px;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 50px!important;
+    font-weight: 300;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: transparent;
+}
+
+a,
+span,
+h1 h2,
+h3,
+h4,
+h6,
+tr,
+td,
+label,
+li,
+ol {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.carousel-caption h5,
+p {
+    font-family: 'Cinzel', serif;
 }
 
 
@@ -56,7 +99,6 @@ body {
     font-size: 60px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Cinzel', serif;
 }
 
 .carousel-caption p {
@@ -66,14 +108,20 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    background-color: rgba(255, 255, 255, 0.90);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    color: #808284!important;
+    padding: 0;
 }
 
 .navbar-nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 23px;
-    margin-top: 10px;
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Cinzel', serif;
 }
@@ -84,8 +132,6 @@ body {
 
 .navbar-brand {
     font-size: 23px;
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Cinzel', serif;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -93,11 +139,13 @@ body {
     text-decoration: none;
     text-decoration-style: wavy;
     font-size: 15px;
-    font-weight: bold;
-    color: white;
-    margin-top: 10px;
-    margin-left: 40px;
-    color: white;
+    padding: 15px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: solid #b191b1 3px;
+    padding-bottom: 12px;
+    transition: border 0.4s;
 }
 
 .container6 {
@@ -108,15 +156,13 @@ body {
 /*About*/
 
 .about {
-    margin-bottom: 10px;
-    background-color: rgb(254, 251, 255);
-    padding: 50px;
+    background-color: rgba(245, 242, 246, 0.98);
+    padding: 60px 0px 40px 0px;
+    border-bottom: solid #ececec 2px;
 }
 
-.section-title {
-    font-size: 30px;
-    padding: 10PX;
-    color: rgb(109, 105, 105);
+.about .section-title {
+    color: #375D81;
 }
 
 .paragraphe {
@@ -126,15 +172,12 @@ body {
 
 .rounded-circle {
     width: 250px;
-    height: 270px;
-    border-radius: 20%;
 }
 
 #button {
     background-color: rgb(230, 187, 219);
     color: rgb(47, 44, 47);
     border: white;
-    font-family: 'Cambria';
     font-style: italic;
     margin-top: 3%;
     border-radius: 26%;
@@ -143,12 +186,18 @@ body {
 
 /*competences*/
 
-.skills {
-    height: 400px;
+.sections.skills {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0px 75px 0px;
+}
+
+.skills .section-title {
+    color: #375D81;
 }
 
 .card {
     border: none;
+    background-color: transparent!important;
 }
 
 .progress {
@@ -164,18 +213,22 @@ body {
 
 /*study*/
 
-.study {
-    margin-top: 40px;
-    margin-top: 60PX;
+.sections.study {
+    padding: 75px 0px 40px 0px;
+    background-color: rgba(245, 242, 246, 0.98);
 }
 
 #study-title {
-    margin-top: 7%;
     margin-bottom: 5%;
 }
 
 
 /*SECTION INTERETS*/
+
+.sections.hobbies {
+    padding: 75px 0px 40px 0px;
+    background-color: rgb(255, 255, 255);
+}
 
 .interet {
     flex: 0 1 50%;
@@ -197,8 +250,41 @@ body {
 
 /*SECTION Contact*/
 
-.contact-section {
+.sections.contact {
     position: relative;
+    background-image: url(../img/PHONE.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sections.contact .inner {
+    background-color: rgba(0, 0, 0, .8);
+    padding-top: 103px;
+    padding-bottom: 60px;
+}
+
+.sections.contact .section-title {
+    margin: 0px 0px 30px 0px;
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+}
+
+#logo {
+    background-color: white;
+    border-radius: 30%;
+}
+
+#logo1 {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sections.contact .contact-section p,
+.sections.contact .contact-section li,
+.sections.contact .contact-section span {
+    color: #b1b1b1!important;
 }
 
 .contact-section .contact-warp {
@@ -211,13 +297,33 @@ body {
     margin-left: 10%;
 }
 
+
+/* *************************           Foot Bas           ******************************************/
+
+#foot-bottom {
+    color: #fff;
+    background-color: #373737;
+    padding: 15px 0px;
+}
+
+#foot-bottom {}
+
+#foot-bottom .foot-text2 a {
+    text-decoration: none;
+    float: right;
+    color: #fff;
+    font-size: 12px;
+}
+
+#foot-bottom .container .foot-text1 {
+    color: #fff;
+    font-size: 12px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .carousel-caption {
         margin-bottom: 250px;
         font-size: 50px;
-    }
-    .marge {
-        margin-top: 20px;
     }
     .navbar-nav li {
         text-align: center;
@@ -249,9 +355,6 @@ body {
     .navbar-brand {
         font-size: 18px;
     }
-    .study {
-        margin-top: 80px;
-    }
     .carousel-caption {
         margin-bottom: 70px;
     }
@@ -278,7 +381,7 @@ body {
     .section-header h2 {
         margin-top: 20px;
     }
-    #logo {
+    #logo-contact {
         width: 250px;
     }
 }
